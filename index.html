@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammed | Computer Systems Engineer</title>
+  <meta name="description" content="Portfolio of Mohammed - BEng Computer Systems Engineering. Specializing in embedded systems, hardware-software integration, low-level programming, and IoT." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">Mohammed</span>
+        <span class="logo-accent">.eng</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+
+      <!-- Nav Links -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+            <span class="theme-icon light-icon" title="Switch to light mode">☀️</span>
+            <span class="theme-icon dark-icon" title="Switch to dark mode">🌙</span>
+          </button>
+          <a href="#contact" class="btn btn-sm btn-primary">Hire Me</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <!-- Interactive Background Canvas (Nodes/Circuits) -->
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-glow"></div>
+
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          <span>BEng Computer Systems Engineering</span>
+        </div>
+        
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Mohammed</span>
+        </h1>
+
+        <h2 class="hero-subtitle">
+          I build <span class="typed-text" id="typed-text"></span><span class="cursor">&nbsp;</span>
+        </h2>
+
+        <p class="hero-description">
+          Bridging the gap between <strong>silicon and software</strong>. Focused on embedded firmware, 
+          RTOS, digital hardware design, and high-performance systems programming.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore Projects</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <span>Get in Touch</span>
+          </a>
+          <a href="#about" class="btn btn-outline" id="resume-btn" download>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+            <span>Resume</span>
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="mailto:your.email@example.com" class="social-link" aria-label="Email">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Terminal Card / Visual Component -->
+      <div class="hero-visual">
+        <div class="terminal-card">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <div class="terminal-title">systems_spec.json</div>
+          </div>
+          <div class="terminal-body">
+            <pre><code><span class="token-property">"engineer"</span>: {
+  <span class="token-key">"name"</span>: <span class="token-string">"Mohammed"</span>,
+  <span class="token-key">"degree"</span>: <span class="token-string">"BEng Computer Systems Engineering"</span>,
+  <span class="token-key">"core_focus"</span>: [
+    <span class="token-string">"Embedded Systems & Firmware"</span>,
+    <span class="token-string">"Hardware-Software Co-Design"</span>,
+    <span class="token-string">"RTOS & Concurrency"</span>,
+    <span class="token-string">"Digital Logic & FPGA"</span>
+  ],
+  <span class="token-key">"primary_languages"</span>: [<span class="token-string">"C"</span>, <span class="token-string">"C++"</span>, <span class="token-string">"Python"</span>, <span class="token-string">"ARM Asm"</span>],
+  <span class="token-key">"status"</span>: <span class="token-boolean">true</span> <span class="token-comment">// Ready for innovation</span>
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">&lt;01. background&gt;</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I am a <strong>Computer Systems Engineering</strong> student / graduate passionate about understanding computing from the physical silicon gate to application-level software.
+          </p>
+          <p>
+            My education and hands-on projects encompass <strong>microprocessor architecture</strong>, <strong>digital circuit design</strong>, <strong>real-time operating systems (RTOS)</strong>, and <strong>communication protocols (SPI, I2C, UART, CAN, Ethernet)</strong>.
+          </p>
+          <p>
+            Whether it's writing memory-efficient bare-metal C drivers for microcontrollers, designing FPGA state machines in Verilog/VHDL, or building telemetry dashboards connecting IoT nodes to the cloud, I thrive on engineering resilient, optimized solutions.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">⚡</span>
+              <div>
+                <h4>Low-Level Systems</h4>
+                <p>Bare-metal C/C++, Memory management, Concurrency & Interrupt handling</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">📟</span>
+              <div>
+                <h4>Microcontroller Architectures</h4>
+                <p>ARM Cortex-M (STM32), ESP32, AVR, PIC & RISC-V exploration</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🌐</span>
+              <div>
+                <h4>IoT & Connected Systems</h4>
+                <p>MQTT, WebSockets, sensor telemetry & hardware-to-cloud integration</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-stats-card">
+          <div class="stat-box">
+            <span class="stat-number">BEng</span>
+            <span class="stat-label">Computer Systems Engineering</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">Hardware & Software Projects</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">C / C++</span>
+            <span class="stat-label">Core Systems Expertise</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Problem Solving Mindset</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">&lt;02. technical-stack&gt;</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Card 1: Programming Languages -->
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon">💻</span>
+            <h3>Languages</h3>
+          </div>
+          <ul class="skill-tags">
+            <li class="tag">C (C99 / C11)</li>
+            <li class="tag">C++ (Modern C++17/20)</li>
+            <li class="tag">Python</li>
+            <li class="tag">ARM / x86 Assembly</li>
+            <li class="tag">Verilog / VHDL</li>
+            <li class="tag">JavaScript (ES6+)</li>
+            <li class="tag">Bash / Shell</li>
+            <li class="tag">SQL</li>
+          </ul>
+        </div>
+
+        <!-- Card 2: Embedded & Hardware -->
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon">🔌</span>
+            <h3>Embedded & Hardware</h3>
+          </div>
+          <ul class="skill-tags">
+            <li class="tag">STM32 (ARM Cortex)</li>
+            <li class="tag">ESP32 / ESP8266</li>
+            <li class="tag">Arduino & Raspberry Pi</li>
+            <li class="tag">UART / SPI / I2C / CAN</li>
+            <li class="tag">FreeRTOS</li>
+            <li class="tag">FPGA & Digital Logic</li>
+            <li class="tag">PCB Design (KiCAD/Eagle)</li>
+            <li class="tag">Oscilloscopes & Logic Analyzers</li>
+          </ul>
+        </div>
+
+        <!-- Card 3: Systems & Architecture -->
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon">⚙️</span>
+            <h3>Systems & OS</h3>
+          </div>
+          <ul class="skill-tags">
+            <li class="tag">Linux / POSIX Systems</li>
+            <li class="tag">Real-Time Systems (RTOS)</li>
+            <li class="tag">Computer Architecture</li>
+            <li class="tag">Memory Management & DMA</li>
+            <li class="tag">Multithreading & Semaphores</li>
+            <li class="tag">Git & GitHub CI/CD</li>
+            <li class="tag">Docker Basics</li>
+            <li class="tag">GDB & OpenOCD Debugging</li>
+          </ul>
+        </div>
+
+        <!-- Card 4: Web & Connected Tools -->
+        <div class="skill-card">
+          <div class="skill-card-header">
+            <span class="skill-icon">🌐</span>
+            <h3>IoT & Web Software</h3>
+          </div>
+          <ul class="skill-tags">
+            <li class="tag">MQTT & HTTP Protocols</li>
+            <li class="tag">RESTful APIs</li>
+            <li class="tag">Node.js / Express</li>
+            <li class="tag">HTML5 & Modern CSS</li>
+            <li class="tag">Data Visualization (Chart.js)</li>
+            <li class="tag">VS Code & PlatformIO</li>
+            <li class="tag">CMake & Makefiles</li>
+            <li class="tag">MATLAB / Simulink</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">&lt;03. engineering-works&gt;</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="embedded">Embedded & Systems</button>
+        <button class="filter-btn" data-filter="hardware">Hardware & FPGA</button>
+        <button class="filter-btn" data-filter="iot">IoT & Software</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card" data-category="embedded">
+          <div class="project-header">
+            <div class="folder-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" title="View Source Code" aria-label="GitHub Repository">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer" title="Live Documentation" aria-label="Demo Link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">FreeRTOS Real-Time Telemetry Node</h3>
+          <p class="project-desc">
+            Engineered a deterministic embedded sensor monitoring hub using FreeRTOS on STM32 ARM Cortex-M. Implemented preemptive scheduling, mutex-protected queue buffering, and low-latency UART DMA communication.
+          </p>
+          <ul class="project-tech">
+            <li>C</li>
+            <li>FreeRTOS</li>
+            <li>STM32</li>
+            <li>DMA</li>
+            <li>UART</li>
+          </ul>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card" data-category="hardware">
+          <div class="project-header">
+            <div class="folder-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 7h10v10H7z"/><path d="M10 3v4"/><path d="M14 3v4"/><path d="M10 17v4"/><path d="M14 17v4"/><path d="M3 10h4"/><path d="M3 14h4"/><path d="M17 10h4"/><path d="M17 14h4"/></svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" title="View Source Code" aria-label="GitHub Repository">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer" title="Live Documentation" aria-label="Demo Link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">FPGA 32-bit RISC Processor Core</h3>
+          <p class="project-desc">
+            Designed a pipelined RISC instruction set processor from scratch in Verilog. Includes arithmetic logic unit (ALU), instruction decoder, register file, and hazard mitigation logic tested on Intel Cyclone FPGA.
+          </p>
+          <ul class="project-tech">
+            <li>Verilog HDL</li>
+            <li>FPGA</li>
+            <li>ModelSim</li>
+            <li>Computer Architecture</li>
+          </ul>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card" data-category="iot">
+          <div class="project-header">
+            <div class="folder-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" x2="12.01" y1="20" y2="20"/></svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" title="View Source Code" aria-label="GitHub Repository">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer" title="Live Documentation" aria-label="Demo Link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Smart Environmental IoT Mesh Network</h3>
+          <p class="project-desc">
+            Distributed sensor network across ESP32 microcontrollers communicating over ESP-NOW and Wi-Fi. Aggregates live environmental parameters into a lightweight MQTT broker with a responsive web dashboard.
+          </p>
+          <ul class="project-tech">
+            <li>ESP32</li>
+            <li>C++ / Arduino</li>
+            <li>MQTT</li>
+            <li>Node.js</li>
+            <li>WebSockets</li>
+          </ul>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card" data-category="embedded">
+          <div class="project-header">
+            <div class="folder-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" title="View Source Code" aria-label="GitHub Repository">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer" title="Live Documentation" aria-label="Demo Link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Bare-Metal CAN Bus Controller Driver</h3>
+          <p class="project-desc">
+            Implemented a bare-metal driver in C for Controller Area Network (CAN 2.0B) communication without vendor HAL bloat. Features bit-timing calculation, mailboxes filtering, and automated error-recovery.
+          </p>
+          <ul class="project-tech">
+            <li>Bare-metal C</li>
+            <li>CAN Bus</li>
+            <li>Embedded Protocols</li>
+            <li>Registers</li>
+          </ul>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card" data-category="hardware">
+          <div class="project-header">
+            <div class="folder-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect width="18" height="18" x="3" y="3" rx="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" title="View Source Code" aria-label="GitHub Repository">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer" title="Live Documentation" aria-label="Demo Link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Digital Signal Processing & Audio Filter</h3>
+          <p class="project-desc">
+            Implemented digital IIR/FIR low-pass and notch filtering in C++ on an ARM processor. Analyzed frequency domain response and harmonic distortion using MATLAB verification and real-time audio oscilloscopes.
+          </p>
+          <ul class="project-tech">
+            <li>C++</li>
+            <li>DSP</li>
+            <li>MATLAB</li>
+            <li>ARM Cortex</li>
+            <li>IIR/FIR</li>
+          </ul>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-card" data-category="iot">
+          <div class="project-header">
+            <div class="folder-icon">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" x2="18" y1="20" y2="10"/><line x1="12" x2="12" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="14"/></svg>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" title="View Source Code" aria-label="GitHub Repository">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="#" target="_blank" rel="noopener noreferrer" title="Live Documentation" aria-label="Demo Link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Real-Time Embedded Telemetry Dashboard</h3>
+          <p class="project-desc">
+            A web application streaming high-frequency data from serial ports or network sockets with low overhead. Provides real-time interactive time-series plots, FFT graphs, and device parameter calibration.
+          </p>
+          <ul class="project-tech">
+            <li>JavaScript</li>
+            <li>WebSockets</li>
+            <li>HTML5 Canvas</li>
+            <li>Node.js</li>
+            <li>Chart.js</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Milestones Section -->
+  <section class="section education-section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">&lt;04. qualifications&gt;</span>
+        <h2 class="section-title">Education & Credentials</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2022 - Present (or Graduation Year)</span>
+            <h3 class="timeline-title">Bachelor of Engineering (BEng) in Computer Systems Engineering</h3>
+            <h4 class="timeline-institution">University Name Here</h4>
+            <p class="timeline-desc">
+              Comprehensive curriculum blending electrical engineering and computer science. Specialized in hardware description, embedded systems, microprocessors, operating systems, and computer network architecture.
+            </p>
+            <div class="timeline-modules">
+              <strong>Key Modules:</strong>
+              <span>Microprocessor Design</span> • 
+              <span>Digital Logic & FPGA</span> • 
+              <span>Real-Time Operating Systems</span> • 
+              <span>Signals & Systems</span> • 
+              <span>Computer Networks</span> • 
+              <span>Object-Oriented Programming (C++)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Academic & Engineering Projects</span>
+            <h3 class="timeline-title">Systems Capstone & Laboratory Research</h3>
+            <h4 class="timeline-institution">Systems Engineering Laboratory</h4>
+            <p class="timeline-desc">
+              Engineered end-to-end hardware-software prototypes, conducted rigorous timing analyses, solved race conditions in concurrent multithreaded firmware, and authored comprehensive technical reports.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">&lt;05. connection&gt;</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h3>Let's Build Something Robust</h3>
+          <p>
+            I am currently open to full-time engineering roles, internships, or collaborative systems projects. 
+            Whether you have a technical question or an opportunity to discuss, my inbox is always open!
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-card">
+              <span class="contact-icon">📧</span>
+              <div>
+                <span class="contact-label">Email</span>
+                <span class="contact-value" id="email-address">mohammed.engineer@example.com</span>
+              </div>
+              <button class="btn-copy" id="copy-email-btn" title="Copy email address">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
+                <span class="copy-text">Copy</span>
+              </button>
+            </div>
+
+            <div class="contact-card">
+              <span class="contact-icon">📍</span>
+              <div>
+                <span class="contact-label">Location</span>
+                <span class="contact-value">Available for On-site & Remote</span>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <span class="contact-icon">💼</span>
+              <div>
+                <span class="contact-label">Profiles</span>
+                <div class="profile-links">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a> • 
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Ada Lovelace" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="ada@domain.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Opportunity / Project Inquiry" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Hello Mohammed, I'd like to talk about..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">
+            <span>Send Message</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" x2="11" y1="2" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+          
+          <div id="form-status" class="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast">Email copied to clipboard!</div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p class="footer-text">
+        Designed & Built by <strong>Mohammed</strong> &copy; <span id="current-year"></span>
+      </p>
+      <p class="footer-sub">
+        BEng Computer Systems Engineering • Hosted on GitHub Pages
+      </p>
+      <a href="#hero" class="back-to-top" aria-label="Back to top">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 15-6-6-6 6"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
