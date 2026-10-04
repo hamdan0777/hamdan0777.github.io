@@ -1,5 +1,5 @@
 /**
- * Mohammed | BEng Computer Systems Engineering Portfolio
+ * Mohammed Hamdan Ruknuddin | BEng Computer Systems Engineering Portfolio
  * Interactive Scripts & Animations
  */
 
@@ -21,17 +21,17 @@ function initTypewriter() {
   if (!typedTextSpan) return;
 
   const words = [
-    'Embedded Systems & Firmware',
-    'Hardware-Software Solutions',
-    'RTOS & Low-Level Drivers',
-    'FPGA & Digital Logic',
-    'Connected IoT Ecosystems'
+    'IoT & Smart Embedded Systems',
+    'C++ & Python Solutions',
+    'Smart Wearable Multimeters',
+    'Gesture Controlled Robotics',
+    'Hardware-Software Systems'
   ];
 
   let wordIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
-  let typingSpeed = 90;
+  let typingSpeed = 85;
 
   function type() {
     const currentWord = words[wordIndex];
@@ -39,17 +39,17 @@ function initTypewriter() {
     if (isDeleting) {
       typedTextSpan.textContent = currentWord.substring(0, charIndex - 1);
       charIndex--;
-      typingSpeed = 45;
+      typingSpeed = 40;
     } else {
       typedTextSpan.textContent = currentWord.substring(0, charIndex + 1);
       charIndex++;
-      typingSpeed = 90;
+      typingSpeed = 85;
     }
 
     if (!isDeleting && charIndex === currentWord.length) {
       // Pause at the end of the word
       isDeleting = true;
-      typingSpeed = 1600;
+      typingSpeed = 1700;
     } else if (isDeleting && charIndex === 0) {
       isDeleting = false;
       wordIndex = (wordIndex + 1) % words.length;
@@ -303,9 +303,9 @@ function initContactActions() {
       const subject = document.getElementById('subject').value;
       const message = document.getElementById('message').value;
 
-      // Construct mailto link
-      const mailtoUrl = `mailto:mohammed.engineer@example.com?subject=${encodeURIComponent(
-        `[Portfolio] ${subject}`
+      // Construct mailto link with Mohammed Hamdan's real email
+      const mailtoUrl = `mailto:mohamdan8924@gmail.com?subject=${encodeURIComponent(
+        `[Portfolio Inquiry] ${subject}`
       )}&body=${encodeURIComponent(`From: ${name} (${email})\n\n${message}`)}`;
 
       window.location.href = mailtoUrl;
