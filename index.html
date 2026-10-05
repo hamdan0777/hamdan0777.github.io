@@ -1,677 +1,182 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mohammed Hamdan Ruknuddin | Computer Systems Engineering</title>
-  <meta name="description" content="Portfolio of Mohammed Hamdan Ruknuddin - BEng Computer Systems Engineering student at Middlesex University Dubai (GPA 3.6). Specializing in Python, C++, Embedded Systems, IoT, and Robotics." />
-  
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Stylesheet -->
+  <title>Mohammed Hamdan Ruknuddin | Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Header / Navigation -->
-  <header class="navbar" id="navbar">
-    <div class="nav-container">
-      <a href="#hero" class="nav-logo">
-        <span class="logo-bracket">&lt;</span>
-        <span class="logo-name">Hamdan</span>
-        <span class="logo-accent">.eng</span>
-        <span class="logo-bracket">/&gt;</span>
-      </a>
 
-      <!-- Mobile Hamburger Button -->
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-        <span class="hamburger-bar"></span>
-        <span class="hamburger-bar"></span>
-        <span class="hamburger-bar"></span>
-      </button>
-
-      <!-- Nav Links -->
-      <nav class="nav-menu" id="nav-menu">
-        <ul class="nav-list">
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#experience" class="nav-link">Experience</a></li>
-          <li><a href="#education" class="nav-link">Education</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <div class="nav-actions">
-          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
-            <span class="theme-icon light-icon" title="Switch to light mode">☀️</span>
-            <span class="theme-icon dark-icon" title="Switch to dark mode">🌙</span>
-          </button>
-          <a href="#contact" class="btn btn-sm btn-primary">Get in Touch</a>
-        </div>
-      </nav>
+  <!-- HERO SECTION (Sage) -->
+  <section class="hero-section bg-sage">
+    <div class="hero-lines">
+      <div class="hero-line"></div>
+      <div class="hero-line"></div>
+      <div class="hero-line"></div>
+      <div class="hero-line"></div>
     </div>
-  </header>
+    
+    <nav class="hero-nav">
+      <div class="nav-logo">Volume Two</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    
+    <div class="hero-content" id="home">
+      <div class="hero-title-group">
+        <h1>ENGINEERING</h1>
+        <div class="hero-title-row">
+          <h1>FEATURING</h1>
+          <img src="profile.jpg" alt="Hero Accent" class="hero-img-inline" />
+        </div>
+        <h1>INTELLIGENT SYSTEMS</h1>
+      </div>
+      
+      <div class="hero-desc">
+        <p>This is where you can explore my engineering portfolio—a showcase of my work in robotics, embedded systems, and software engineering. I build solutions bridging the gap between physical hardware and intelligent logic.</p>
+      </div>
+      
+      <div class="vertical-text">Keep Scrolling</div>
+    </div>
+  </section>
 
-  <!-- Hero Section -->
-  <section class="hero-section" id="hero">
-    <!-- Interactive Background Canvas (Nodes/Circuits) -->
-    <canvas id="hero-canvas"></canvas>
-    <div class="hero-glow"></div>
-
-    <div class="container hero-container">
-      <div class="hero-content">
-        <div class="hero-badge">
-          <span class="pulse-dot"></span>
-          <span>BEng Computer Systems Engineering • Middlesex University Dubai (GPA 3.6)</span>
+  <!-- ABOUT SECTION (Cream) -->
+  <section class="about-section bg-cream" id="about">
+    <div class="container">
+      <div class="about-header uppercase-spaced">
+        <span>WORK WITH ME</span>
+        <span>VIEW MY FOLIO</span>
+      </div>
+      
+      <div class="about-grid">
+        <div class="about-images">
+          <div class="about-img-bg"></div>
+          <img src="profile.jpg" alt="Mohammed Hamdan" class="about-img" />
         </div>
         
-        <h1 class="hero-title">
-          Hi, I'm <br><span class="gradient-text">Mohammed Hamdan Ruknuddin</span>
-        </h1>
-
-        <h2 class="hero-subtitle">
-          I develop <span class="typed-text" id="typed-text"></span><span class="cursor">&nbsp;</span>
-        </h2>
-
-        <p class="hero-description">
-          First-year <strong>Computer Systems Engineering</strong> student at <strong>Middlesex University Dubai</strong> with foundational skills in <strong>Python, C++, JavaScript</strong>, and <strong>IoT systems</strong>. Passionate about embedded systems, smart wearable technologies, and solving engineering challenges. Actively seeking internship opportunities.
-        </p>
-
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">
-            <span>Explore Projects</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-          </a>
-          <a href="#contact" class="btn btn-secondary">
-            <span>Contact Me</span>
-          </a>
-          <a href="Mohammed_Hamdan_Ruknuddin_Resume.pdf" class="btn btn-outline" id="resume-btn" download="Mohammed_Hamdan_Ruknuddin_Resume.pdf" target="_blank">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
-            <span>Download Resume</span>
-          </a>
-        </div>
-
-        <div class="hero-socials">
-          <a href="https://www.linkedin.com/in/mohammed-hamdan-ruknuddin-040589359/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn" title="LinkedIn Profile">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-          </a>
-          <a href="mailto:mohamdan8924@gmail.com" class="social-link" aria-label="Email" title="Email Mohammed">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-          </a>
-          <a href="tel:+971556532234" class="social-link" aria-label="Phone" title="Call +971 55 653 2234">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          </a>
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub" title="GitHub Profile">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-          </a>
-        </div>
-      </div>
-
-      <!-- Hero Visual Showcase: Photo & Systems Spec -->
-      <div class="hero-visual">
-        <div class="profile-hero-card">
-          <div class="profile-image-wrapper">
-            <img src="profile.jpg" alt="Mohammed Hamdan Ruknuddin" class="profile-img" />
-            <div class="profile-status-badge">
-              <span class="status-dot"></span>
-              <span>Open to Internships</span>
-            </div>
-          </div>
-          
-          <div class="terminal-card">
-            <div class="terminal-header">
-              <div class="terminal-dots">
-                <span class="dot dot-red"></span>
-                <span class="dot dot-yellow"></span>
-                <span class="dot dot-green"></span>
-              </div>
-              <div class="terminal-title">systems_spec.json</div>
-            </div>
-            <div class="terminal-body">
-              <pre><code><span class="token-property">"engineer"</span>: {
-  <span class="token-key">"name"</span>: <span class="token-string">"Mohammed Hamdan Ruknuddin"</span>,
-  <span class="token-key">"education"</span>: <span class="token-string">"Middlesex University Dubai"</span>,
-  <span class="token-key">"degree"</span>: <span class="token-string">"BEng Computer Systems"</span>,
-  <span class="token-key">"gpa"</span>: <span class="token-number">3.6</span>,
-  <span class="token-key">"focus"</span>: [<span class="token-string">"Embedded & IoT"</span>, <span class="token-string">"Python / C++"</span>, <span class="token-string">"Robotics"</span>],
-  <span class="token-key">"location"</span>: <span class="token-string">"Dubai, UAE"</span>
-}</code></pre>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section class="section about-section" id="about">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">&lt;01. background&gt;</span>
-        <h2 class="section-title">About Me</h2>
-        <div class="section-line"></div>
-      </div>
-
-      <div class="about-grid">
         <div class="about-text">
+          <h2>Hi, I'm Mohammed!</h2>
+          <h4>BENG COMPUTER SYSTEMS ENGINEERING | GPA 4.0</h4>
           <p>
-            I am a first-year <strong>Computer Systems Engineering</strong> student at <strong>Middlesex University Dubai</strong> (maintaining a <strong>3.6 GPA</strong>), driven by a deep fascination with how physical silicon interfaces with intelligent software.
+            I am a first-year Computer Systems Engineering student at Middlesex University Dubai. 
+            My technical foundation spans Python, C++, JavaScript, and embedded IoT development. 
+            I am passionate about continuous problem-solving, rapid prototyping with microcontrollers, 
+            and engineering robust architectures for robotics and smart automation.
           </p>
-          <p>
-            With a solid technical foundation in <strong>Python, C++, JavaScript</strong>, and <strong>MySQL</strong>, I specialize in architecting hands-on embedded systems and IoT solutions. My work spans building a <strong>smart wearable multimeter with Bluetooth telemetry</strong>, engineering an <strong>AI-integrated air quality monitor</strong>, and developing a <strong>gesture-controlled vehicle for hazardous environments</strong>.
-          </p>
-          <p>
-            I am passionate about continuous problem-solving, rapid prototyping with <strong>Arduino, ESP32, and Raspberry Pi Pico</strong>, and applying simulation tools like <strong>MATLAB, Simulink, Altium Designer</strong>, and <strong>SolidWorks</strong> to turn complex ideas into functional products.
-          </p>
-
-          <div class="about-highlights">
-            <div class="highlight-item">
-              <span class="highlight-icon">⚡</span>
-              <div>
-                <h4>Embedded & IoT Systems</h4>
-                <p>Arduino, Raspberry Pi Pico, ESP32, BLE communication, and sensor integration</p>
-              </div>
-            </div>
-            <div class="highlight-item">
-              <span class="highlight-icon">💻</span>
-              <div>
-                <h4>Software & Database Systems</h4>
-                <p>Python, C++, modern JavaScript, Web APIs, and MySQL relational data design</p>
-              </div>
-            </div>
-            <div class="highlight-item">
-              <span class="highlight-icon">📐</span>
-              <div>
-                <h4>Engineering & 3D Prototyping</h4>
-                <p>Altium Designer (circuits), MATLAB & Simulink (modeling), and SolidWorks (3D CAD)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="about-stats-card">
-          <div class="stat-box">
-            <span class="stat-number">3.6</span>
-            <span class="stat-label">University GPA (BEng)</span>
-          </div>
-          <div class="stat-box">
-            <span class="stat-number">93%</span>
-            <span class="stat-label">High School Grade</span>
-          </div>
-          <div class="stat-box">
-            <span class="stat-number">5+</span>
-            <span class="stat-label">Engineered Projects</span>
-          </div>
-          <div class="stat-box">
-            <span class="stat-number">4</span>
-            <span class="stat-label">Spoken Languages</span>
-          </div>
+          <a href="Mohammed_Hamdan_Ruknuddin_Resume.pdf" target="_blank" class="btn-link">DOWNLOAD RESUME</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section class="section skills-section" id="skills">
+  <!-- PROJECTS SECTION (Olive Green) -->
+  <section class="projects-section bg-olive" id="projects">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">&lt;02. technical-stack&gt;</span>
-        <h2 class="section-title">Skills & Technologies</h2>
-        <div class="section-line"></div>
+      <div class="projects-header">
+        <span>SELECTED WORKS</span>
+        <h2>PROJECTS</h2>
       </div>
-
-      <div class="skills-grid">
-        <!-- Card 1: Programming Languages -->
-        <div class="skill-card">
-          <div class="skill-card-header">
-            <span class="skill-icon">💻</span>
-            <h3>Programming Languages</h3>
-          </div>
-          <ul class="skill-tags">
-            <li class="tag">Python</li>
-            <li class="tag">C++</li>
-            <li class="tag">JavaScript (JS)</li>
-            <li class="tag">C</li>
-            <li class="tag">SQL</li>
-          </ul>
-        </div>
-
-        <!-- Card 2: Embedded & IoT -->
-        <div class="skill-card">
-          <div class="skill-card-header">
-            <span class="skill-icon">🔌</span>
-            <h3>Embedded Systems & IoT</h3>
-          </div>
-          <ul class="skill-tags">
-            <li class="tag">Arduino</li>
-            <li class="tag">Raspberry Pi Pico</li>
-            <li class="tag">ESP32</li>
-            <li class="tag">Bluetooth / BLE</li>
-            <li class="tag">IoT Protocols & Integration</li>
-            <li class="tag">Sensors & Actuators</li>
-            <li class="tag">Microcontroller Interfacing</li>
-          </ul>
-        </div>
-
-        <!-- Card 3: Engineering Tools & CAD -->
-        <div class="skill-card">
-          <div class="skill-card-header">
-            <span class="skill-icon">⚙️</span>
-            <h3>Engineering & 3D Design</h3>
-          </div>
-          <ul class="skill-tags">
-            <li class="tag">MATLAB</li>
-            <li class="tag">Simulink</li>
-            <li class="tag">Altium Designer</li>
-            <li class="tag">SolidWorks (3D Design)</li>
-            <li class="tag">Circuit Simulation</li>
-            <li class="tag">Hardware Prototyping</li>
-          </ul>
-        </div>
-
-        <!-- Card 4: Databases & Web Software -->
-        <div class="skill-card">
-          <div class="skill-card-header">
-            <span class="skill-icon">🌐</span>
-            <h3>Databases & Software</h3>
-          </div>
-          <ul class="skill-tags">
-            <li class="tag">MySQL</li>
-            <li class="tag">Database Management</li>
-            <li class="tag">HTML5 & Modern CSS</li>
-            <li class="tag">Web Bluetooth API</li>
-            <li class="tag">RESTful Architecture</li>
-            <li class="tag">Git & GitHub</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Spoken Languages Component -->
-      <div class="languages-wrapper">
-        <h3 class="languages-title">🌐 Spoken Languages</h3>
-        <div class="languages-grid">
-          <div class="lang-item">
-            <span class="lang-name">English</span>
-            <span class="lang-level">Fluent</span>
-          </div>
-          <div class="lang-item">
-            <span class="lang-name">Urdu</span>
-            <span class="lang-level">Fluent</span>
-          </div>
-          <div class="lang-item">
-            <span class="lang-name">Arabic</span>
-            <span class="lang-level">Intermediate</span>
-          </div>
-          <div class="lang-item">
-            <span class="lang-name">Malayalam</span>
-            <span class="lang-level">Basics</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section class="section projects-section" id="projects">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">&lt;03. engineering-works&gt;</span>
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="section-line"></div>
-      </div>
-
-      <!-- Category Filter Tabs -->
-      <div class="project-filters">
-        <button class="filter-btn active" data-filter="all">All Projects</button>
-        <button class="filter-btn" data-filter="embedded">Embedded & IoT</button>
-        <button class="filter-btn" data-filter="robotics">Robotics & Vehicles</button>
-        <button class="filter-btn" data-filter="software">Software & Web</button>
-      </div>
-
-      <div class="projects-grid">
-        <!-- Project 1: Smart Wearable Multimeter -->
-        <article class="project-card" data-category="embedded">
-          <div class="project-header">
-            <div class="folder-icon">
-              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" title="View Source Code" aria-label="GitHub Repository">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-              </a>
-              <a href="#contact" title="Project Details" aria-label="Demo Link">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
-              </a>
-            </div>
-          </div>
-          <h3 class="project-title">Smart Wearable Multimeter with IoT & Bluetooth</h3>
+      
+      <div class="projects-masonry">
+        <!-- Project: ERC Robot -->
+        <div class="project-card">
+          <div class="project-category">Robotics & Navigation</div>
+          <h3 class="project-title">Autonomous Library Assistant Robot</h3>
           <p class="project-desc">
-            Engineered a compact, hands-free wearable multimeter measuring voltage, current, and resistance. Integrates an embedded microcontroller with Bluetooth Low Energy (BLE) and IoT connectivity for wireless real-time data streaming and automated testing.
+            Developed a comprehensive ROS 2 software stack for a TIAGo Pro mobile manipulator for the Emirates Robotics Competition 2026. Configured a ROS 2 Humble & Gazebo Harmonic simulation via Docker, customizing Mesa drivers and Vulkan OpenGL overrides for hardware acceleration. Engineered omnidirectional mecanum navigation to parallel-park alongside 5.25m shelves using custom trigonometric LiDAR processing. Built a continuous 3D perception node to extract Cartesian coordinates from PointCloud2 feeds. Implemented a collision-free grasping pipeline using MoveIt 2 and OctoMap to safely extract books and deliver them to a collection bin.
           </p>
-          <ul class="project-tech">
-            <li>Arduino / ESP32</li>
-            <li>Bluetooth BLE</li>
-            <li>IoT Protocols</li>
-            <li>C++</li>
-            <li>Hardware Prototyping</li>
-          </ul>
-        </article>
+          <a href="https://github.com/hamdan0777/ERC26-TB" target="_blank" class="project-link">VIEW PROJECT &rarr;</a>
+        </div>
 
-        <!-- Project 2: Bluetooth Connectivity Web App -->
-        <article class="project-card" data-category="software">
-          <div class="project-header">
-            <div class="folder-icon">
-              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><line x1="18" x2="18" y1="20" y2="10"/><line x1="12" x2="12" y1="20" y2="4"/><line x1="6" x2="6" y1="20" y2="14"/></svg>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" title="View Source Code" aria-label="GitHub Repository">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-              </a>
-              <a href="#contact" title="Project Details" aria-label="Demo Link">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
-              </a>
-            </div>
-          </div>
-          <h3 class="project-title">Bluetooth Connectivity Web App for Multimeter</h3>
+        <!-- Project: Multimeter -->
+        <div class="project-card">
+          <div class="project-category">IoT & Embedded</div>
+          <h3 class="project-title">Smart Wearable Multimeter</h3>
           <p class="project-desc">
-            Designed an interactive companion web application that pairs directly with the wearable multimeter using the browser's Web Bluetooth API. Visualizes real-time voltage/current charts, logs historical electrical metrics, and triggers alerts.
+            Engineered a compact, hands-free wearable multimeter measuring voltage, current, and resistance. Integrates an embedded microcontroller with Bluetooth Low Energy (BLE) and IoT connectivity for wireless real-time data streaming and automated testing. Includes a paired JavaScript Web Bluetooth API dashboard for live visualization.
           </p>
-          <ul class="project-tech">
-            <li>JavaScript (ES6+)</li>
-            <li>Web Bluetooth API</li>
-            <li>HTML5 / CSS3</li>
-            <li>Data Logging</li>
-            <li>UI/UX</li>
-          </ul>
-        </article>
+          <a href="https://github.com/hamdan0777/Smart-Multimeter-Project" target="_blank" class="project-link">VIEW PROJECT &rarr;</a>
+        </div>
 
-        <!-- Project 3: Air Quality Monitor with AI & IoT -->
-        <article class="project-card" data-category="embedded">
-          <div class="project-header">
-            <div class="folder-icon">
-              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" title="View Source Code" aria-label="GitHub Repository">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-              </a>
-              <a href="#contact" title="Project Details" aria-label="Demo Link">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
-              </a>
-            </div>
-          </div>
-          <h3 class="project-title">Air Quality Monitor with AI & IoT Integration</h3>
+        <!-- Project: HEV -->
+        <div class="project-card">
+          <div class="project-category">Robotics & Hardware</div>
+          <h3 class="project-title">Hazardous Environment Vehicle (HEV)</h3>
           <p class="project-desc">
-            Developed an intelligent multi-sensor environmental tracking hub that measures air pollutants and ambient factors. Incorporates AI algorithms in Python to detect trends, classify hazard levels, and transmit telemetry to cloud dashboards.
+            Constructed a robotic reconnaissance vehicle engineered for safe inspection of hazardous or unreachable zones. Controlled seamlessly via wearable hand-gesture inputs utilizing an IMU glove, integrated with wireless IoT communication and a companion monitoring app.
           </p>
-          <ul class="project-tech">
-            <li>Python</li>
-            <li>ESP32 / Pico</li>
-            <li>AI / Machine Learning</li>
-            <li>IoT Cloud</li>
-            <li>Sensors</li>
-          </ul>
-        </article>
+          <a href="https://github.com/hamdan0777/JAZ-Competition-2026" target="_blank" class="project-link">VIEW PROJECT &rarr;</a>
+        </div>
 
-        <!-- Project 4: Gesture Controlled Vehicle -->
-        <article class="project-card" data-category="robotics">
-          <div class="project-header">
-            <div class="folder-icon">
-              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect width="18" height="18" x="3" y="3" rx="2"/><circle cx="8" cy="18" r="2"/><circle cx="16" cy="18" r="2"/><path d="M9 9h6v4H9z"/></svg>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" title="View Source Code" aria-label="GitHub Repository">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-              </a>
-              <a href="#contact" title="Project Details" aria-label="Demo Link">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
-              </a>
-            </div>
-          </div>
-          <h3 class="project-title">Gesture Controlled Hazardous Environment Vehicle</h3>
+        <!-- Project: Air Quality Monitor -->
+        <div class="project-card">
+          <div class="project-category">IoT & Machine Learning</div>
+          <h3 class="project-title">Air Quality Monitor with AI Integration</h3>
           <p class="project-desc">
-            Constructed a robotic reconnaissance vehicle engineered for safe inspection of hazardous or unreachable zones. Controlled seamlessly via wearable hand-gesture inputs with wireless IoT communication and a companion control app.
+            Developed an intelligent multi-sensor environmental tracking hub measuring air pollutants. Incorporates AI algorithms in Python to detect trends, classify hazard levels, and transmit telemetry to cloud dashboards.
           </p>
-          <ul class="project-tech">
-            <li>ESP32 / Arduino</li>
-            <li>Gesture Control (IMU)</li>
-            <li>Robotics & Motors</li>
-            <li>IoT App</li>
-            <li>C++</li>
-          </ul>
-        </article>
-
-        <!-- Project 5: Web Login System -->
-        <article class="project-card" data-category="software">
-          <div class="project-header">
-            <div class="folder-icon">
-              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" title="View Source Code" aria-label="GitHub Repository">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-              </a>
-              <a href="#contact" title="Project Details" aria-label="Demo Link">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
-              </a>
-            </div>
-          </div>
-          <h3 class="project-title">Web Login & User Management System</h3>
+          <a href="#" class="project-link">VIEW DETAILS &rarr;</a>
+        </div>
+        
+        <!-- Project: Web Login -->
+        <div class="project-card">
+          <div class="project-category">Software Development</div>
+          <h3 class="project-title">Secure Web Login System</h3>
           <p class="project-desc">
             Implemented a secure full-stack web authentication system featuring credential hashing, session verification, input sanitization, and relational database schema design powered by MySQL.
           </p>
-          <ul class="project-tech">
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>MySQL</li>
-            <li>Web Security</li>
-            <li>Authentication</li>
-          </ul>
-        </article>
+          <a href="#" class="project-link">VIEW DETAILS &rarr;</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Work Experience Section -->
-  <section class="section experience-section" id="experience">
+  <!-- EXPERIENCE SECTION (Cream) -->
+  <section class="experience-section bg-cream" id="experience">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">&lt;04. experience&gt;</span>
-        <h2 class="section-title">Work Experience</h2>
-        <div class="section-line"></div>
-      </div>
-
-      <div class="experience-card">
-        <div class="exp-header">
-          <div>
-            <span class="exp-badge">Internship</span>
-            <h3 class="exp-role">Estimator Intern</h3>
-            <h4 class="exp-company">AuraSpace Interiors</h4>
-          </div>
-          <div class="exp-meta">
-            <span class="exp-date">May 2025 – Sep 2025</span>
-            <span class="exp-location">Dubai, UAE</span>
-          </div>
-        </div>
-
-        <ul class="exp-points">
-          <li>Assisted in preparing and reviewing project cost estimates, conducted detailed quantity take-offs, and gathered supplier pricing data.</li>
-          <li>Collaborated cross-functionally with the design and commercial team on bid documentation, technical proposals, and tender submissions.</li>
-          <li>Provided multilingual translation support (English, Urdu, Arabic) for seamless internal operations and external client communications.</li>
-          <li>Supported financial operations with routine banking procedures including account deposits, withdrawals, and organized record-keeping.</li>
-          <li>Gained extensive, hands-on commercial experience in project lifecycle management, budgeting, and client coordination.</li>
-        </ul>
-
-        <div class="reference-box">
-          <div class="ref-title">Professional Reference</div>
-          <div class="ref-content">
-            <strong>Abdullah Shabandri</strong> — Managing Partner, AuraSpace Interiors<br />
-            <span>📞 Phone: <a href="tel:+971558741037">+971 55 874 1037</a></span> • 
-            <span>✉️ Email: <a href="mailto:abdullah@auraspaceinteriors.com">abdullah@auraspaceinteriors.com</a></span>
-          </div>
-        </div>
+      <div class="experience-content">
+        <h3>PROFESSIONAL EXPERIENCE</h3>
+        <h2>
+          "Working as an Estimator Intern at AuraSpace Interiors provided me hands-on experience in project lifecycle management, technical bid documentation, and cross-functional coordination."
+        </h2>
+        <p>May 2025 – Sep 2025 &nbsp; | &nbsp; Dubai, UAE</p>
       </div>
     </div>
   </section>
 
-  <!-- Education Section -->
-  <section class="section education-section" id="education">
+  <!-- CONTACT & FOOTER SECTION (Tan/Beige) -->
+  <section class="contact-section bg-tan" id="contact">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag">&lt;05. academic-path&gt;</span>
-        <h2 class="section-title">Education & Qualifications</h2>
-        <div class="section-line"></div>
-      </div>
-
-      <div class="timeline">
-        <!-- University -->
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">2025 – 2028 (In Progress)</span>
-            <h3 class="timeline-title">BEng in Computer Systems Engineering</h3>
-            <h4 class="timeline-institution">Middlesex University Dubai — <strong>GPA: 3.6 / 4.0</strong></h4>
-            <p class="timeline-desc">
-              Rigorous engineering curriculum combining hardware architecture and advanced software programming. Developing deep expertise in embedded systems, microcontrollers, real-time operating concepts, programming (C++, Python), and computer networks.
-            </p>
-            <div class="timeline-modules">
-              <strong>Core Engineering Competencies:</strong>
-              <span>Microcontroller Systems</span> • 
-              <span>Circuit & PCB Prototyping</span> • 
-              <span>Data Structures & C++</span> • 
-              <span>IoT & Telemetry</span> • 
-              <span>Computer Architecture</span>
-            </div>
-          </div>
+      <h2>LET'S CONNECT</h2>
+      
+      <div class="contact-grid">
+        <div class="contact-block">
+          <h4>EMAIL</h4>
+          <a href="mailto:mohamdan8924@gmail.com">mohamdan8924@gmail.com</a>
         </div>
-
-        <!-- High School -->
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <span class="timeline-date">Graduated 2025</span>
-            <h3 class="timeline-title">High School Diploma</h3>
-            <h4 class="timeline-institution">Crescent English School, Dubai — <strong>Grade: 93%</strong></h4>
-            <p class="timeline-desc">
-              Graduated with high academic distinction. Built strong foundations in advanced Mathematics, Physics, and Computer Science, fostering an analytical mindset for university-level engineering.
-            </p>
-          </div>
+        <div class="contact-block">
+          <h4>PHONE</h4>
+          <a href="tel:+971556532234">+971 55 653 2234</a>
+        </div>
+        <div class="contact-block">
+          <h4>SOCIAL</h4>
+          <a href="https://www.linkedin.com/in/mohammed-hamdan-ruknuddin-040589359/" target="_blank">LinkedIn</a>
+          <a href="https://github.com/hamdan0777" target="_blank">GitHub</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section class="section contact-section" id="contact">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">&lt;06. connection&gt;</span>
-        <h2 class="section-title">Get In Touch</h2>
-        <div class="section-line"></div>
-      </div>
-
-      <div class="contact-wrapper">
-        <div class="contact-info">
-          <h3>Let's Connect & Collaborate</h3>
-          <p>
-            I am currently seeking software, hardware, or systems engineering internship opportunities. 
-            Whether you have an inquiry, a project proposal, or would like to discuss my engineering work, feel free to reach out directly!
-          </p>
-
-          <div class="contact-details">
-            <div class="contact-card">
-              <span class="contact-icon">📧</span>
-              <div>
-                <span class="contact-label">Email</span>
-                <span class="contact-value" id="email-address">mohamdan8924@gmail.com</span>
-              </div>
-              <button class="btn-copy" id="copy-email-btn" title="Copy email address">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>
-                <span class="copy-text">Copy</span>
-              </button>
-            </div>
-
-            <div class="contact-card">
-              <span class="contact-icon">📱</span>
-              <div>
-                <span class="contact-label">Phone / WhatsApp</span>
-                <span class="contact-value"><a href="tel:+971556532234">+971 55 653 2234</a></span>
-              </div>
-            </div>
-
-            <div class="contact-card">
-              <span class="contact-icon">📍</span>
-              <div>
-                <span class="contact-label">Location</span>
-                <span class="contact-value">8 14 St, Dubai, UAE | PO Box: 3778</span>
-              </div>
-            </div>
-
-            <div class="contact-card">
-              <span class="contact-icon">💼</span>
-              <div>
-                <span class="contact-label">Professional Profiles</span>
-                <div class="profile-links">
-                  <a href="https://www.linkedin.com/in/mohammed-hamdan-ruknuddin-040589359/" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a> • 
-                  <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <form class="contact-form" id="contact-form">
-          <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="John Doe" required />
-          </div>
-
-          <div class="form-group">
-            <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" placeholder="john@example.com" required />
-          </div>
-
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject" name="subject" placeholder="Internship Opportunity / Project Inquiry" required />
-          </div>
-
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Hello Mohammed Hamdan, I reviewed your portfolio and would like to talk about..." required></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-primary btn-block">
-            <span>Send Message</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" x2="11" y1="2" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
-          </button>
-          
-          <div id="form-status" class="form-status"></div>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- Toast Notification -->
-  <div id="toast" class="toast">Email copied to clipboard!</div>
-
-  <!-- Footer -->
   <footer class="footer">
-    <div class="container footer-content">
-      <p class="footer-text">
-        Designed & Built by <strong>Mohammed Hamdan Ruknuddin</strong> &copy; <span id="current-year"></span>
-      </p>
-      <p class="footer-sub">
-        BEng Computer Systems Engineering • Middlesex University Dubai
-      </p>
-      <a href="#hero" class="back-to-top" aria-label="Back to top">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m18 15-6-6-6 6"/></svg>
-      </a>
-    </div>
+    &copy; <span id="year"></span> Mohammed Hamdan Ruknuddin. All rights reserved.
   </footer>
 
-  <!-- Scripts -->
   <script src="script.js"></script>
 </body>
 </html>
